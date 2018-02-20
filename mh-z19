@@ -1,0 +1,64 @@
+#include <SoftwareSerial.h>
+
+#define rxPin 10
+#define txPin 11
+
+SoftwareSerial mySerial(rxPin, txPin);
+
+byte cmd[9] = {0xFF,0x01,0x86,0x00,0x00,0x00,0x00,0x00,0x79}; 
+byte cmd1[9] = {0xFF,0x01,0x79,0x00,0x00,0x00,0x00,0x00,0x86}; // ABC off 
+byte cmd2[9] = {0xFF,0x01,0x79,0xA0,0x00,0x00,0x00,0x00,0xE6}; // ABC on
+unsigned char response[9];
+int c = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(rxPin, INPUT);
+  pinMode(txPin, OUTPUT);
+  mySerial.begin(9600);
+}
+
+void loop() 
+{
+/*
+  mySerial.listen();
+  if (c == 0) {
+    mySerial.write(cmd2, 9);
+    Serial.println("OFF");  
+    c = 1;
+  }
+  */
+  mySerial.write(cmd, 9);
+  if (mySerial.available() != 9) {
+    Serial.println("Available: " + String(mySerial.available()) + " bytes.");
+    while (mySerial.available() > 0) {
+      int a = mySerial.read();
+      Serial.print(String(a, HEX) + ", ");  
+    } 
+    Serial.println();
+  } else {
+    
+    memset(response, 0, 9);
+    mySerial.readBytes(response, 9);
+    
+    int i;
+    byte crc = 0;
+    for (i = 1; i < 8; i++) crc+=response[i];
+    crc = 255 - crc;
+    crc++;
+  
+    if ( !(response[0] == 0xFF && response[1] == 0x86 && response[8] == crc) ) {
+      Serial.println("CRC error: " + String(crc) + " / "+ String(response[8]) + ": ");
+      //for (i = 0; i <=8; i++) Serial.print(String(response[i]) + ", ");
+      //Serial.println();
+    } else {
+      unsigned int responseHigh = (unsigned int) response[2];
+      unsigned int responseLow = (unsigned int) response[3];
+      unsigned int ppm = (256*responseHigh) + responseLow;
+      Serial.println(ppm);
+    }
+  }  
+//  int v = analogRead(A0);
+//  Serial.println("V: " + String(v * 5.0 / 1024));
+  delay(2000);
+}
