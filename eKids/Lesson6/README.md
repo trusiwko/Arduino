@@ -7,11 +7,11 @@
 Создадим проект на tinkercad, затем перенесем его на ардуино. 
 После регистрации/авторизации на сайте https://www.tinkercad.com, на главной странице в меню слева выбираем Circuits, далее жмем кнопку Create new Circuit. Справа расположена панель с компонентами. Компоненты разделены по группам, их также можно фильтровать. Выберем группу Arduino, в которой расположено 22 примера, которые сделаны на основе базовых примеров арудино:
 
-![img1](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/img1.png)
+![img1](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/src/img1.png)
 
 Найдем среди них пример Servo и перетащим на страницу:
 
-![img2](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/img2.png)
+![img2](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/src/img2.png)
 
 Далее нажмем кнопку Code, после чего откроется Scratch-подобный интерфейс для разработки, сменим его на привычный нам текст - меняем в списке Blocks на Text и подтверждаем выбор кнопкой Continue (здесь написано, что вернуться обратно в стиль "Блоки" не получится).
 
@@ -59,7 +59,7 @@ void loop()
   }
 }
 ```
-![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/demo1.gif)
+![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/src/demo1.gif)
 
 ## Управление сервоприводом с помощью потенциометра
 
@@ -103,7 +103,7 @@ void loop()
   delay(50);
 }
 ```
-![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/demo2.gif)
+![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/src/demo2.gif)
 
 ## Добавим светодиод
 
@@ -155,4 +155,4 @@ void loop()
   delay(100);
 }
 ```
-![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/demo3.gif)
+![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/src/demo3.gif)

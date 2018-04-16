@@ -4,7 +4,7 @@
 
 Если смешать красный и синий, получим пурпурный цвет (фуксия), если смешать синий и зеленый, получим сине-зеленый или бирюзовый цвет. А если смешать красный и зеленый, то получим желтый.
 
-![rgb](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson7/rgb.jpg)
+![rgb](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson7/src/rgb.jpg)
 
 У светодиода 4 ноги - три для каждого цвета и одна общая на землю (самая длинная). Мы будем их подключать к ШИМ пинам ардуино, чтобы плавно увеличивать и уменьшать яркость каждого из цветов, таким образом мы сможем сделать переливы.
 
@@ -123,7 +123,7 @@ void loop()
 }
 ```
 
-![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson7/demo1.gif)
+![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson7/src/demo1.gif)
 
 ## Случайный цвет
 
@@ -193,4 +193,4 @@ void loop()
   b = v;
 }
 ```
-![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson7/demo2.gif)
+![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson7/src/demo2.gif)
