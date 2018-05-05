@@ -156,3 +156,44 @@ void loop()
 }
 ```
 ![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/src/demo3.gif)
+
+## Управление кнопками
+
+Управляем сервоприводом с помощью двух кнопок. При нажатии на одну - поворачиваем ее в одну сторону, при нажатии на другую - поворачиваем ее в другую сторону. 
+Схема подключения:
+![6d](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/6d.png)
+
+Обращаем внимание на подтягивающие резисторы 10 кОм у кнопок. Они нужны для того, чтобы "подтянуть" пины к земле, иначе они будут ловить помехи и выдавать случайные значения.
+
+При запуске установим серву в положение 90 (середина).
+Текущее положение сервы будем сохранять в переменной `pos`. При нажатии на первую кнопку будем добавлять 5 пунктов к переменной, при нажатии на вторую кнопку - отнимать 5 пунктов. Далее серву будем позиционировать на новое полученное число. 
+
+Полученный код: 
+```C++
+#include <Servo.h>
+
+int pos = 90;
+
+Servo servo;
+
+void setup()
+{
+  servo.attach(9);
+  pinMode(10, INPUT);
+  pinMode(11, INPUT);
+  servo.write(pos);
+}
+
+void loop()
+{
+  if (digitalRead(10) == HIGH) {
+    pos += 5;
+  }
+  if (digitalRead(11) == HIGH) {
+    pos -= 5;
+  }
+  servo.write(pos);
+  delay(200);
+}
+```
+![demo](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson6/src/demo4.gif)
