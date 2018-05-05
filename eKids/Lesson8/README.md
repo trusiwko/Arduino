@@ -69,6 +69,6 @@ void loop()
 # Работа с термистором
 
 Термистор - резистор, сопротивление которого изменяется от температуры.
-![img](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson8/src/img1.jpg)
+![img](https://github.com/trusiwko/Arduino/raw/master/eKids/Lesson8/src/img2.jpg)
 
 Работа с термистором аналогична работе с фоторезистором. Также подключается по схеме делителя напряжения.
