@@ -4,7 +4,7 @@
 
 ![img](https://github.com/trusiwko/Arduino/raw/master/eKids/LessonA/src/img1.png)
 
-Компонент имеет 7 выводов, из которых мы будем использовать шесть. Подключать их к ардуино следует так, как на картинке выше. Для работы со считывателем карт необходимо загрузить библиотеку `MFRC522.h`: https://www.arduinolibraries.info/libraries/mfrc522
+Компонент имеет 8 выводов, из которых мы будем использовать 7. Подключать их к ардуино следует так, как на картинке выше. Для работы со считывателем карт необходимо загрузить библиотеку `MFRC522.h`: https://www.arduinolibraries.info/libraries/mfrc522
 
 Последняя версия на текущий момент: [MFRC522-1.4.0.zip](http://downloads.arduino.cc/libraries/github.com/miguelbalboa/MFRC522-1.4.0.zip)
 
