@@ -64,3 +64,12 @@
 
 [Работа с пультом дистанционного управления](https://github.com/trusiwko/Arduino/tree/master/eKids/Lesson9#Работа-с-пультом-дистанционного-управления)
 * [Управление светодиодами с пульта ДУ](https://github.com/trusiwko/Arduino/tree/master/eKids/Lesson9#Управление-светодиодами-с-пульта-ДУ)
+
+## Урок A. Считыватель RFID-карт
+
+[Считыватель RFID-карт](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonA#Считыватель-rfid-карт)
+* [Добавим пару светодиодов](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonA#Добавим-пару-светодиодов)
+
+## Урок B. Работа с ЖК-дисплеями
+
+[Работа с ЖК-дисплеями](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonB#Работа-с-ЖК-дисплеями)
