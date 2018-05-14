@@ -73,3 +73,8 @@
 ## Урок B. Работа с ЖК-дисплеями
 
 [Работа с ЖК-дисплеями](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonB#Работа-с-ЖК-дисплеями)
+
+## Урок C. Датчик Холла, Джойстик
+
+* [Датчик Холла](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonC#Датчик-Холла)
+* [Джойстик](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonC#Джойстик)
