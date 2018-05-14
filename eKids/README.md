@@ -78,3 +78,4 @@
 
 * [Датчик Холла](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonC#Датчик-Холла)
 * [Джойстик](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonC#Джойстик)
+* [Датчик наклона](https://github.com/trusiwko/Arduino/tree/master/eKids/LessonC#Датчик-наклона)
